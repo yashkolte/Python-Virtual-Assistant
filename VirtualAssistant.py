@@ -1,4 +1,4 @@
-#change 'email' to your email 'password' to your password to removw the error 
+#change 'email','password' and 'receiver_email' to remove the error 
 import pyttsx3
 import speech_recognition as sr
 import datetime
