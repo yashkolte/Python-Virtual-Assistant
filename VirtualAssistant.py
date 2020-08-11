@@ -1,3 +1,4 @@
+#change 'email' to your email 'password' to your password to removw the error 
 import pyttsx3
 import speech_recognition as sr
 import datetime
@@ -54,8 +55,8 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('yashempire9@gmail.com','yash@9111')
-    server.sendmail('yashempire9@gmail.com', to, content)
+    server.login('email','password')
+    server.sendmail('email', to, content)
     server.close()
 
 if __name__ == "__main__":
@@ -100,7 +101,7 @@ if __name__ == "__main__":
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "yashkolte9@gmail.com"    
+                to = "receiver_email"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
             
